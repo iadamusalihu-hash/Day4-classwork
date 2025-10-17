@@ -1,5 +1,5 @@
 FROM postgres:15-alpine
-COPY init-databse.sql /docker-entrypoint-initdb.d/
+COPY init-database.sql /docker-entrypoint-initdb.d/
 #set environment variables
 ENV POSTGRES_USER=nimc_user
 ENV POSTGRES_DB=nimc_db
